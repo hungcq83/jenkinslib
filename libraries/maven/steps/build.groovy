@@ -4,7 +4,7 @@ void call(){
         def process = "find / -type d -name 'maven'".execute()
         print "Output: " + process.text
         print "Exit code: " + process.exitValue()
-        process = "pwd".execute()
+        process = "ls".execute()
         print "Output: " + process.text
         print "Exit code: " + process.exitValue()
     }
